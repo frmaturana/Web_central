@@ -1,0 +1,29 @@
+
+$border-radius: "24px";
+$border-radius-sm: "24px";
+$border-radius-lg: "24px";
+
+$btn-border-radius:           $border-radius;
+$btn-border-radius-sm:        $border-radius-sm;
+$btn-border-radius-lg:        $border-radius-lg;
+
+
+
+$primary: #5680FB;
+$secundary: #A1C400;
+$light: white;
+
+
+$theme-colors: (
+  "primary": $primary,
+  "secundary": $secundary,
+  "light": $light,
+);
+
+$font-family-sans-serif:       "New Nord", sans-serif;
+$font-family-monospace:       "New Nord", monospace;
+
+
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";

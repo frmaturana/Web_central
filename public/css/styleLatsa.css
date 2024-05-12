@@ -1,0 +1,187 @@
+body {
+    background-color: #333333;
+    position: relative;
+}
+
+.navbar-transparent {
+    background-color: #ffffff00;
+    color: white;
+}
+
+header {
+    height: 720px;
+}
+
+.foco-fondo {
+    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    opacity: 1; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegura que este elemento esté detrás del título */
+}
+
+.foco-primario-1 {
+    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegura que este elemento esté detrás del título */
+  }
+
+  .foco-secundario-1 {
+    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    top: -120px;
+    left: 0;
+    width: 100%;
+    min-width: 500px;
+    height: 1250px;
+    overflow: hidden;
+    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
+    z-index: -1; /* Asegura que este elemento esté detrás del título */
+    animation: deform 3s infinite alternate;
+  }
+
+  @keyframes deform {
+    0% {
+      transform: skewX(0deg) scale(1);
+    }
+    50% {
+      transform: skewX(0deg) scale(1.3);
+    }
+    100% {
+      transform: skewX(0deg) scale(1);
+    }
+  }
+
+
+/* Títulos secundarios */
+
+h3, .primary {
+    background-color: #5680FB;
+}
+
+h3, .secundary {
+    background-color: #A1C400;
+}
+
+h3 {
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 24px;
+    color: white;
+}
+
+.nav-item-start:hover {
+    color: #5680FB !important;
+    text-decoration: underline;
+}
+
+/* Barra de desplazamiento */
+
+::-webkit-scrollbar {
+  width: 9px; /* Ancho de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-track {
+  background: #252525; /* Color de fondo de la pista de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #384160; /* Color del agarre de la barra de desplazamiento */
+  border-radius: 10px; /* Radio de borde del agarre de la barra de desplazamiento */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38436d; /* Color del agarre de la barra de desplazamiento al pasar el mouse */
+}
+
+/* Fin de barra de desplazamiento */
+
+
+/* descripción */
+
+.descripcion-sobre-Nosotros h2{
+  background-color: #A1C400;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+}
+
+.descripcion-sobre-Nosotros-secundario h2{
+  background-color: #5680FB;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 100px;
+}
+
+.descripcion-sobre-Nosotros p{
+  font-size: calc(0.9rem + 0.9vw);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.white-line {
+  border: none;
+  border-top: 6px solid white; /* Establece el grosor y el color de la línea */
+  width: 100%; /* Hace que la línea ocupe todo el ancho disponible */
+  position: relative;
+  margin-right: 20px;
+}
+
+.white-line::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: inherit; /* Hereda el color de la línea */
+  transform: translateY(-50%);
+}
+
+.logo-title-sobre-nosotros{
+  max-height: 60px;
+}
+
+.imagen-lab{
+  max-height: 750px;
+  position: relative;
+  background-image : url('../images/imagen_lab.png');
+  background-repeat: no-repeat;
+  background-size : cover;
+  background-position : 50% 50%;
+  min-height: 100%;
+}
+
+.carousel-control-prev-icon {
+  display: none; /* Oculta el icono predeterminado */
+}
+
+.carousel-control-next-icon {
+  display: none; /* Oculta el icono predeterminado */
+}
+
+.carousel-control-prev {
+  background-image: url('../images/icon-carousel-right.svg'); /* Ruta de la imagen para el botón anterior */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.carousel-control-next {
+  background-image: url('../images/icon-carousel-left.svg'); /* Ruta de la imagen para el botón siguiente */
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+footer img {
+  max-width: 100%;
+}
