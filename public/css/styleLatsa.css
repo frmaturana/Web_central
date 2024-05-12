@@ -184,4 +184,17 @@ h3 {
 
 footer img {
   max-width: 100%;
+  object-fit: cover;
+  object-position: center;
+  max-height: 300px;
+  padding: 40px;
+}
+
+.logos-footer {
+  max-height: 400px;  
+}
+
+.bi {
+  font-size: 2em;
+  color:white;
 }
