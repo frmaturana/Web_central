@@ -15,7 +15,7 @@ const { href, title, body, btn } = Astro.props;
 	  <h4 class="card-title">{title}</h4>
 	  <p class="card-text">{body}</p>
 	  {
-		btn && href
+		btn && href && btn!== ""
 			? <a href={href} class={`btn btn-${btn}`} >Ir a web</a> 
 			: ""
 	  }
