@@ -1,0 +1,98 @@
+---
+import CardPerson from "./CardPerson.astro";
+---
+
+<div class="container my-3 px-5">
+    <div class="row descripcion-sobre-Nosotros px-5">
+        <h2 class="text-white">INTEGRANTES</h2>
+    </div>
+</div>
+
+<div class="mt-4 mb-5">
+    <div
+        id="carouselExampleIndicators"
+        class="carousel slide"
+        data-bs-ride="carousel"
+    >
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Dr. Francisco Maturana M."
+                                body="Director y Profesor Asociado, Instituto de Ciencias de la Tierra"
+                                href="www.fmaturana.cl"
+                                btn="primary"
+                            />
+                        </div>
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Jorge Cárdenas P"
+                                body="Profesional"
+                                href="#"
+                                btn=""
+                            />
+                        </div>
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Tesistas pregrado en curso"
+                                body="Pedro Medina N. Camila Mora C. Gabriel Quezada M. Constanza Lobos I. Constanza Saldías J"
+                                href="#"
+                                btn=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Ashly Marambio A."
+                                body="Tesis Magíster en curso"
+                                href="#"
+                                btn=""
+                            />
+                        </div>
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Mauricio Morales S."
+                                body="Tesistas Doctorado en curso"
+                                href="#"
+                                btn=""
+                            />
+                        </div>
+                        <div class="col-md-4">
+                            <CardPerson
+                                title="Practicantes"
+                                body="Allan González M."
+                                href="#"
+                                btn=""
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev"
+        >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next"
+        >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+</div>

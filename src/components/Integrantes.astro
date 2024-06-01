@@ -1,98 +1,109 @@
----
-import CardPerson from "./CardPerson.astro";
----
-
 <div class="container my-3 px-5">
-    <div class="row descripcion-sobre-Nosotros px-5">
-        <h2 class="text-white">INTEGRANTES</h2>
-    </div>
+  <div class="row descripcion-sobre-Nosotros px-5">
+    <h2 class="text-white">INTEGRANTES</h2>
+  </div>
 </div>
 
-<div class="mt-4 mb-5">
-    <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-bs-ride="carousel"
-    >
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Dr. Francisco Maturana M."
-                                body="Director y Profesor Asociado, Instituto de Ciencias de la Tierra"
-                                href="www.fmaturana.cl"
-                                btn="primary"
-                            />
-                        </div>
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Jorge Cárdenas P"
-                                body="Profesional"
-                                href="#"
-                                btn=""
-                            />
-                        </div>
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Tesistas pregrado en curso"
-                                body="Pedro Medina N. Camila Mora C. Gabriel Quezada M. Constanza Lobos I. Constanza Saldías J"
-                                href="#"
-                                btn=""
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="carousel-item">
-                <div class="d-flex justify-content-center align-items-center">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Ashly Marambio A."
-                                body="Tesis Magíster en curso"
-                                href="#"
-                                btn=""
-                            />
-                        </div>
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Mauricio Morales S."
-                                body="Tesistas Doctorado en curso"
-                                href="#"
-                                btn=""
-                            />
-                        </div>
-                        <div class="col-md-4">
-                            <CardPerson
-                                title="Practicantes"
-                                body="Allan González M."
-                                href="#"
-                                btn=""
-                            />
-                        </div>
-                    </div>
-                </div>
-            </div>
+<div class="container" id="listaIntegrantes">
+  <div class="row">
+    <div class="mt-4 mb-3 px-5">
+      <div id="director" class="row card-integrantes borde-azul">
+        <div class="col-md-6">
+          <h4>DIRECTOR</h4>
+          <h5>Dr. Francisco Maturana M.</h5>
+          <p>Profesor Asociado, Instituto de Ciencias de la Tierra</p>
         </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Anterior</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Siguiente</span>
-        </button>
+        <div class="col-md-6">
+          <p>Web: www.fmaturana.cl</p>
+          <a href="#"
+            ><button class="btn btn-secundary text-white">Entrar aquí</button
+            ></a
+          >
+        </div>
+      </div>
     </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-6 px-5">
+      <div
+        id="profesionales"
+        class="row card-integrantes borde-verde mt-4 mb-5"
+      >
+        <h5>Profesionales</h5>
+        <ul>
+          <li>Jorge Cárdenas P.</li>
+          <li>Enzo Marín</li>
+          <li>Sebastián Durán</li>
+        </ul>
+      </div>
+      <div
+        id="tesistasPostgrado"
+        class="row card-integrantes borde-blanco mt-4 mb-5"
+      >
+        <h5>Tesis postgrado</h5>
+        <ul>
+          <li>Ashly Marambio A.<p class="descripcion-integrante">Tesis Magíster en curso</p></li>
+          <li>Mauricio Morales S.<p class="descripcion-integrante">Tesistas Doctorado en curso</p></li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-6 px-5">
+      <div
+        id="tesistasPregradoEnCurso"
+        class="row card-integrantes borde-azul mt-4 mb-5"
+      >
+        <h5>Tesistas pregrado en curso</h5>
+        <ul>
+          <li>Pedro Medina N.</li>
+          <li>Camila Mora C.</li>
+          <li>Gabriel Quezada M.</li>
+          <li>Constanza Lobos I.</li>
+          <li>Constanza Saldías J.</li>
+        </ul>
+      </div>
+      <div id="practicantes" class="row card-integrantes borde-verde mt-4 mb-5">
+        <h5>Practicantes</h5>
+        <ul>
+          <li>Allan González M.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </div>
+
+<style>
+  .card-integrantes {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+  }
+
+  .borde-verde {
+    border-color: #a1c400;
+  }
+
+  .borde-azul {
+    border-color: #5680fb;
+  }
+
+  .borde-blanco {
+    border-color: white;
+  }
+
+  ul {
+    margin: 0px;
+  }
+
+  li {
+    list-style: none;
+    margin-right: 0.2rem;
+  }
+
+  .descripcion-integrante{
+    font-size: 14px;
+    font-weight: 600;
+  }
+</style>
