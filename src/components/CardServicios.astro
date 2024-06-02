@@ -1,0 +1,52 @@
+---
+interface Props {
+	title: string;
+	color: string;
+}
+
+const { title, color } = Astro.props;
+
+---
+
+<div class={`card border-card-${color}`}>
+	<div class={`card-body`}>
+	  <h5 class="card-title">{title}</h5>
+	</div>
+</div>
+
+<style>
+	.card{
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid;
+        color: white;
+        height: 100%;
+	}
+
+    .card-body {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        display: flex;
+    }
+
+    .card h5 {
+        margin: 0;
+  top: 100%;
+  left: 50%;
+    }
+
+    .border-card-verde{
+        border-color: #a1c400;
+    }
+
+    .border-card-azul{
+        border-color: #5680fb;
+    }
+
+    .border-card-blanco{
+        border-color: white;
+    }
+
+</style>

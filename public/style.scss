@@ -20,9 +20,19 @@ $theme-colors: (
   "light": $light,
 );
 
-$font-family-sans-serif:       "New Nord", sans-serif;
-$font-family-monospace:       "New Nord", monospace;
+@font-face {
+  font-family: 'Noto-Regular';
+  src: url('../fonts/NotoMonoNerdFont-Regular.ttf') format('opentype');
+}
 
+// Ahora puedes utilizar esta fuente en tus estilos
+body {
+  font-family: 'Noto-Regular', sans-serif;
+}
+
+$font-family-sans-serif:       "Noto-Regular", sans-serif;
+$font-family-monospace:       "Noto-Regular", monospace;
+$font-weight: 900;
 
 
 

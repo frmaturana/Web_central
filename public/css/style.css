@@ -1,4 +1,16 @@
 @charset "UTF-8";
+@font-face {
+  font-family: "Noto-Regular";
+  src: url("../fonts/NotoMonoNerdFont-Regular.ttf") format("opentype");
+}
+body {
+  font-family: "Noto-Regular", sans-serif;
+}
+
+h2, .h2 {
+  font-weight: 900;
+}
+
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -61,8 +73,8 @@
   --bs-dark-border-subtle: #adb5bd;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-font-sans-serif: "New Nord", sans-serif;
-  --bs-font-monospace: "New Nord", monospace;
+  --bs-font-sans-serif: "Noto-Regular", sans-serif;
+  --bs-font-monospace: "Noto-Regular", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
   --bs-body-font-family: var(--bs-font-sans-serif);
   --bs-body-font-size: 1rem;

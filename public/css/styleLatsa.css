@@ -13,36 +13,54 @@ header {
 }
 
 .foco-fondo {
-    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     max-width: 100%;
     overflow: hidden;
-    opacity: 1; /* Ajusta la opacidad según sea necesario */
-    z-index: -1; /* Asegura que este elemento esté detrás del título */
+    opacity: 1; 
+    z-index: -1; 
 }
 
 .foco-primario-1 {
-    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    position: absolute; 
     top: 0;
     left: 0;
     width: 100%;
-    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
-    z-index: -1; /* Asegura que este elemento esté detrás del título */
+    opacity: 0.9; 
+    z-index: -2;
   }
+  
 
   .foco-secundario-1 {
-    position: absolute; /* Permite posicionar este elemento de forma absoluta dentro del contenedor relativo */
+    position: absolute; 
     top: -120px;
     left: 0;
     width: 100%;
     min-width: 500px;
     height: 1250px;
     overflow: hidden;
-    opacity: 0.9; /* Ajusta la opacidad según sea necesario */
-    z-index: -1; /* Asegura que este elemento esté detrás del título */
+    opacity: 0.9; 
+    z-index: -2; 
     animation: deform 3s infinite alternate;
+  }
+
+  .lineas-mapa {
+    position: absolute; 
+    top: 550px;
+    left: 0;
+    width: 100%;
+    opacity: 0.9; 
+    z-index: -4;
+  }
+
+  .lineas-mapa-degradado{
+    position: absolute; 
+    top: 1150px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
   }
 
   @keyframes deform {

@@ -1,29 +1,36 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import PresentationPage from '../components/PresentationPage.astro';
-import Navbar from '../components/Navbar.astro';
-import SobreNosotros from '../components/SobreNosotros.astro';
-import Integrantes from '../components/Integrantes.astro';
-import Visores from '../components/Visores.astro';
-import Footer from '../components/Footer.astro';
+import Layout from "../layouts/Layout.astro";
+import PresentationPage from "../components/PresentationPage.astro";
+import Navbar from "../components/Navbar.astro";
+import SobreNosotros from "../components/SobreNosotros.astro";
+import Integrantes from "../components/Integrantes.astro";
+import Visores from "../components/Visores.astro";
+import Footer from "../components/Footer.astro";
+import Servicios from "../components/Servicios.astro";
 ---
 
 <Layout title="Bienvenido a Latsa.">
-	<div style="width: auto;">
-		<Navbar/>
-		<div class="foco-fondo">
-			<img  class="foco-primario-1" src="/images/foco-primario-rectangulo.svg"/>
-			<img  class="foco-secundario-1" src="/images/foco-secundario-elipce.svg"/>
-			<header class="d-flex justify-content-center align-items-center" >
-				<PresentationPage/>
-			</header>
-			<main>
-				<SobreNosotros/>
-				<Integrantes/>
-				<Visores/>
-				<Footer/>
-			</main>
-		</div>
-	</div>
-</Layout>
+  <div style="width: auto;">
+    <Navbar />
+    <div class="foco-fondo">
+      <img class="foco-primario-1" src="/images/foco-primario-rectangulo.svg" />
+      <img class="foco-secundario-1" src="/images/foco-secundario-elipce.svg" />
+      <header class="d-flex justify-content-center align-items-center">
+        <PresentationPage />
+      </header>
 
+      <main>
+        <img class="lineas-mapa" src="/images/Group 7.png" />
+        <img
+          class="lineas-mapa-degradado"
+          src="/images/Rectangle-black-down.png"
+        />
+        <SobreNosotros />
+        <Integrantes />
+        <Visores />
+        <Servicios />
+        <Footer />
+      </main>
+    </div>
+  </div>
+</Layout>

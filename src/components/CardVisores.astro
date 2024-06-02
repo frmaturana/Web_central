@@ -1,33 +1,49 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
-	btn: string;
+  title: string;
+  body: string;
+  href: string;
+  btn: string;
 }
 
 const { href, title, body, btn } = Astro.props;
-
 ---
 
-<div class="card m-5" style="width: 18rem;">
-	<div class="card-body">
-	  <h4 class="card-title">{title}</h4>
-	  <p class="card-text">{body}</p>
-	  {
-		btn && href && btn!== ""
-			? <a href={href} class={`btn btn-${btn}`} >Ir a web</a> 
-			: ""
-	  }
-	</div>
+<div class={`card card-${btn}`}>
+  <div class="card-body">
+    <h4 class="card-title">{title}</h4>
+    <p class="card-text">{body}</p>
+    {
+      btn && href && btn !== "" ? (
+        <a href={href} class={`btn btn-${btn}`}>
+          Ir a web
+        </a>
+      ) : (
+        ""
+      )
+    }
+  </div>
 </div>
 
 <style>
-	.card{
-		background-color: rgba(0, 0, 0, 0.1);
-    	border-radius: 16px; 
-    	padding: 20px;
-		border-color: rgba(255, 255, 255, 0.8);
-		color: white;
-	}
+  .card {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    height: 100%;
+  }
+
+  .btn {
+    color: white;
+  }
+
+  .card-primary {
+    border-color: #a1c400;
+  }
+
+  .card-secundary {
+    border-color: #5680fb;
+  }
 </style>

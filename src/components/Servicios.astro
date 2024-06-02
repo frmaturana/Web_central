@@ -1,1 +1,62 @@
-<h1>Servicios</h1>
+---
+import CardServicios from "./CardServicios.astro";
+---
+
+<div class="container my-5 px-5">
+  <div class="row descripcion-sobre-Nosotros px-5">
+    <h2 class="text-white">Servicios</h2>
+  </div>
+</div>
+
+<div class="container justify-content-between mt-4 mb-5">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <CardServicios title="Diagnósticos territoriales" color="blanco" />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios title="Cartografía" color="azul" />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios
+        title="Levantamiento de información espacial"
+        color="verde"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <CardServicios
+        title="Apoyo en la elaboración de Instrumentos de Planificación Territorial (PRC, PRI, PLADECOS, PROT, ZOIT, Entre otros.)"
+        color="azul"
+      />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios
+        title="Visores, plataformas o dashboard espaciales"
+        color="verde"
+      />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios
+        title="Análisis de accesibilidad y movilidad"
+        color="blanco"
+      />
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <CardServicios title="Encuestas y muestreo" color="verde" />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios title="Estudio de riesgos" color="blanco" />
+    </div>
+    <div class="col-md-4 mb-4">
+      <CardServicios
+        title="Capacitación (cursos en SIG, R, Python y Planificación Territorial)"
+        color="azul"
+      />
+    </div>
+  </div>
+</div>
