@@ -1,0 +1,90 @@
+---
+import CardProyecto from "./CardProyecto.astro";
+---
+
+<div class="container text-white my-5">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>PUBLICACIONES</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <h2 class="text-white my-5 text-center fondo-verde">2024</h2>
+    </div>
+    <div class="col-md-9 d-flex align-items-center justify-content-center">
+      <hr class="white-line me-4" />
+    </div>
+  </div>
+  <div class="row">
+    <CardProyecto body="Lazo, A., Martínez, M., Maturana, F., Solsona, D. & Ther, F. Movilidad urbana e interurbana en la Isla Grande de Chiloé: Patrones de viaje en ciudades intermedias y de menor tamaño en un contexto archipelágico. Revista EURE - Revista De Estudios Urbano Regionales, 50(150)." 
+    color="azul" 
+    href="https://doi.org/10.7764/EURE.50.150.07"/>
+  </div>
+  <div class="row">
+    <div class="col-md-9 d-flex align-items-center justify-content-center">
+      <hr class="white-line me-4" />
+    </div>
+    <div class="col-md-3">
+      <h2 class="text-white my-5 text-center fondo-azul">2023</h2>
+    </div>
+  </div>
+  <div class="row text-end">
+    <CardProyecto body='Mazzorana, B. & Maturana, F. "Mitigating Complex Flood Risks in Southern Chile in a Particular Spatial Planning Context: Towards a Sustainable Strategy”. En Oyarzún, C., Mazzorana, B., Iribarren Anacona, P., Iroumé, A. (Eds.) Rivers of Southern Chile and Patagonia. The Latin American Studies Book Series. Springer,192-233.(WoS).' 
+    color="verde" href="https://doi.org/10.1007/978-3-031-26647-8_10"/>
+    <CardProyecto body='Cárdenas, J., Gómez, J., Maturana, F. & Fuenzalida, M. "Distribución espacial de las hospitalizaciones por enfermedad isquémica del corazón en Chile: 2002-2020". Salud Pública de México, 65, 325-333.' 
+    color="verde" href="https://doi.org/10.21149/14575"/>
+    <CardProyecto body='Maturana, F., Sepúlveda, U. & Meneses, C. "Pautas de distribución y concentración de la migración externa en Chile. Explorando niveles de su vulnerabilidad". Estudios Geográficos, 84(294), e126. (SCOPUS)' 
+    color="verde" href="https://doi.org/10.3989/estgeogr.2023132.132"/>
+    <CardProyecto body='Almonacid-Vidal, F., Maturana, F., Peña-Cortés, F. & Román, A. "Rellenos sanitarios en contextos insulares. Desafíos en el archipiélago de Chiloé, desde una aproximación espacial y normativa”. Investigaciones Geográficas, (66), 14–31.(ERIH Plus)' 
+    color="verde" href="https://doi.org/10.5354/0719-5370.2023.70981"/>
+  </div>
+  <div class="row">
+    <div class="col-md-3">
+      <h2 class="text-white my-5 text-center fondo-verde">2022</h2>
+    </div>
+    <div class="col-md-9 d-flex align-items-center justify-content-center">
+      <hr class="white-line me-4" />
+    </div>
+  </div>
+  <div class="row">
+    <CardProyecto body='Núñez, A., Riquelme, W., Salazar, G., Maturana, F. & Morales, M."Dinámicas urbanas en territorio indígena: transformación en las formas de habitar mapuche en el lof Rengalil, Labranza (región de la Araucanía, Chile) ”. Revista de Estudios Sociales, 80(2022), 75-96. (WoS)' 
+    color="azul" href="https://doi.org/10.7440/res80.2022.05"/>
+    <CardProyecto body='Maturana, F., Morales, M., Sepúlveda, U. & Maldonado, J. "Ciudades intermedias y parque automotriz en Chile. ¿En jaque la sustentabilidad territorial?". Revista ICONOS Ciencias Sociales, 72, 139-159. (SCOPUS)' 
+    color="azul" href="https://doi.org/10.17141/iconos.72.2022.4866"/>
+    <CardProyecto body='Sepúlveda, U., Maturana, F., Muniz, O. & Palomino-Schalscha, M. (Eds). Geografía contemporánea Pensar y hacer desde los territorios. Santiago: Universidad Alberto Hurtado Ediciones.' 
+    color="azul" href=""/>
+  </div>
+  <div class="row">
+    <div class="col-md-9 d-flex align-items-center justify-content-center">
+      <hr class="white-line me-4" />
+    </div>
+    <div class="col-md-3">
+      <h2 class="text-white my-5 text-center fondo-azul">2021</h2>
+    </div>
+  </div>
+  <div class="row text-end">
+    <CardProyecto body='Maturana, F., Morales, M., Peña-Cortés, F., Peña, M.A. & Vielma, C.“ Urban Growth, Real Estate Development and Indigenous Property: Simulating the Expansion Process in the City of Temuco, Chile”. ISPRS International Journal of Geo-Information. 2021; 10(2):101. (WoS)' 
+    color="verde" href="https://doi.org/10.3390/ijgi10020101"/>
+  </div>
+</div>
+
+<style>
+    .fondo-verde{
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid;
+        color: white;
+        border-color: #a1c400;
+    }
+
+    .fondo-azul{
+        background-color: rgba(0, 0, 0, 0.1);
+        border-radius: 16px;
+        padding: 20px;
+        border: 1px solid;
+        color: white;
+        border-color: #5680fb;
+    }
+</style>

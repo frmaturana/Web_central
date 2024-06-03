@@ -1,9 +1,11 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
-import Investigaciones from '../components/Investigaciones.astro';
-import Servicios from '../components/Servicios.astro';
 import Footer from '../components/Footer.astro';
+import InicioInvestigacion from '../components/investigacion/InicioInvestigacion.astro';
+import Proyectos from '../components/investigacion/Proyectos.astro';
+import Publicacion from '../components/investigacion/Publicacion.astro';
+import Tesis from '../components/investigacion/Tesis.astro';
 ---
 
 <Layout title="Investigación en Latsa">
@@ -11,8 +13,10 @@ import Footer from '../components/Footer.astro';
 		<Navbar/>
 		<div class="foco-fondo">
 			<main>
-				<Investigaciones/>
-				<Servicios/>
+				<InicioInvestigacion/>
+				<Proyectos/>
+				<Publicacion/>
+				<Tesis/>	
 				<Footer/>
 			</main>
 		</div>

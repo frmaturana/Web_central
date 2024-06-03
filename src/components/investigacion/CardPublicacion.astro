@@ -1,0 +1,36 @@
+---
+interface Props {
+  body: string;
+  href: string;
+  color: string;
+}
+const { href, body, color } = Astro.props;
+---
+
+<div class="row my-4">
+  <div class="col-md-12">
+    <article class={`${color}`}>
+      {body}
+    </article>
+  </div>
+</div>
+
+<style>
+  .verde {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    border-color: #a1c400;
+  }
+
+  .azul {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    border-color: #5680fb;
+  }
+</style>

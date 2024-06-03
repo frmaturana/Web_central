@@ -1,0 +1,46 @@
+---
+interface Props {
+  year: string;
+  body: string;
+  href: string;
+  color: string;
+  forAutor: string;
+}
+const { href, body, color, year, forAutor } = Astro.props;
+---
+
+<div class="d-flex justify-content-center align-items-center text-white text-center">
+  <div class="row">
+    <div class="col-md-12 ">
+      <article class={`${color} px-5`}>
+        <h5>{year}</h5>
+        {body}
+        <p>{forAutor}</p>
+      </article>
+    </div>
+  </div>
+</div>
+
+<style>
+  .verde {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    border-color: #a1c400;
+  }
+
+  .azul {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    padding: 20px;
+    border: 1px solid;
+    color: white;
+    border-color: #5680fb;
+  }
+
+  article{
+    height: 200px;
+  }
+</style>

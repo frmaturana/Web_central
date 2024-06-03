@@ -1,0 +1,140 @@
+---
+import CardTesis from "./CardTesis.astro";
+import CardTesisPostgrado from "./CardTesisPostgrado.astro";
+---
+
+<div class="container text-white">
+  <div class="row">
+    <div class="col-md-12 justify-content-end text-end">
+      <h1>TESIS EN EL MARCO DEL LABORATORIO</h1>
+    </div>
+  </div>
+</div>
+
+<div class="mt-4 mb-5">
+  <div class="container text-white">
+    <div class="row mb-4">
+      <div class="col-md-12 justify-content-end text-center">
+        <h2> Postrgrado </h2>
+      </div>
+    </div>
+  </div>
+
+  <div id="carouselPostrado" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner container">
+      <div class="carousel-item active">
+        <CardTesisPostgrado 
+        year="2023"
+        body='“Mecanismos de acceso y gestión del agua en campamentos de santiago: casos de estudio en Puente Alto y Lo Barnechea”'
+        forAutor="Para optar al título de Magíster en Ciencias mención Recursos Hídricos, Universidad Austral de Chile. Samuel Valenzuela Castillo."
+        href=""
+        color="verde"
+        />
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselPostrado"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselPostrado"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
+<div class="mt-4 mb-5">
+  <div class="container text-white">
+    <div class="row mb-4">
+      <div class="col-md-12 justify-content-end text-center">
+        <h2>Pregrado</h2>
+      </div>
+    </div>
+  </div>
+  <div id="carouselPregrado" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner container ">
+      <div class="carousel-item active">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="row">
+            <CardTesis 
+            year="2023"
+            body='“Balance del proceso migratorio interno de las comunas de la región metropolitana y macrozona sur de Chile entre los años 1977 y 2017”'
+            forAutor="Jorge Ignacio Sanzana Jara. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="azul"/>
+            <CardTesis 
+            year="2023"
+            body='“Cambios del uso/cobertura de suelo en la comuna de Valdivia entre los años 2001 a 2021”'
+            forAutor="Jorge Eder Silva Rodríguez. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="verde"/>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="row">
+            <CardTesis 
+            year="2023"
+            body='“Trayectoria del sistema de ciudades de la región de los lagos en los últimos 40 años”'
+            forAutor="Sofía Victoria Soto Vera. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="verde"/>
+            <CardTesis 
+            year="2023"
+            body='“Análisis de la evolución del sistema de ciudades: Región de la Araucanía”'
+            forAutor="Constanza Elena Vásquez Sáez. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="azul"/>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="row">
+            <CardTesis
+            year="2022"
+            body='“Posibles localizaciones de rellenos sanitarios en espacios insulares. El caso del Archipiélago de Chiloé, desde un acercamiento espacial y normativo"'
+            forAutor="Francisco Almonacid. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="azul"/>
+            <CardTesis
+            year="2022"
+            body='“Percepción del riesgo y vulnerabilidad de los habitantes frente a eventos de inundación. El caso del sector de Barrios Bajos, Valdivia”'
+            forAutor="Claudio Alfonso Navarrete Pérez. Para optar al título profesional de Geógrafo de la Universidad Austral de Chile. Tipo tesis."
+            href=""
+            color="verde"/>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button
+      class="carousel-control-prev"
+      type="button"
+      data-bs-target="#carouselPregrado"
+      data-bs-slide="prev"
+    >
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button
+      class="carousel-control-next"
+      type="button"
+      data-bs-target="#carouselPregrado"
+      data-bs-slide="next"
+    >
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
