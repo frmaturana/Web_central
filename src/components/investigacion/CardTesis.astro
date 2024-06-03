@@ -9,8 +9,8 @@ interface Props {
 const { href, body, color, year, forAutor } = Astro.props;
 ---
 
-<div class="col-md-6 px-3 mb-3 text-white text-center align-items-center">
-  <article class={`${color} px-5`}>
+<div class="col-md-6 px-3 mb-3 text-white d-flex justify-content-center align-items-center">
+  <article class={`${color} px-5 align-middle text-center my-auto`}>
     <h5>{year}</h5>
     {body}
     <p>{forAutor}</p>
@@ -25,6 +25,7 @@ const { href, body, color, year, forAutor } = Astro.props;
     border: 1px solid;
     color: white;
     border-color: #a1c400;
+    display: grid;
   }
 
   .azul {
@@ -34,9 +35,13 @@ const { href, body, color, year, forAutor } = Astro.props;
     border: 1px solid;
     color: white;
     border-color: #5680fb;
+    display: grid;
   }
 
+  @media only screen and (min-width: 1400px) {
   article{
     height: 250px;
   }
+}
+
 </style>

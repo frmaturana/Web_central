@@ -29,6 +29,7 @@ const { href, body, color, year, forAutor } = Astro.props;
     border: 1px solid;
     color: white;
     border-color: #a1c400;
+    display: grid;
   }
 
   .azul {
@@ -38,9 +39,12 @@ const { href, body, color, year, forAutor } = Astro.props;
     border: 1px solid;
     color: white;
     border-color: #5680fb;
+    display: grid;
   }
 
+  @media only screen and (min-width: 1400px) {
   article{
     height: 200px;
   }
+}
 </style>
