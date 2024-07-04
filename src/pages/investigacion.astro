@@ -9,17 +9,29 @@ import Tesis from '../components/investigacion/Tesis.astro';
 ---
 
 <Layout title="Investigación en Latsa">
-	<div style="width: auto;">
-		<Navbar/>
+	<div style="width: auto;" id="inicio">
 		<div class="foco-fondo">
 			<main>
 				<InicioInvestigacion id="inicio" />
 				<Proyectos id="proyectos"/>
 				<Publicacion id="publicacion"/>
 				<Tesis id="tesis"/>	
-				<Footer />
+				<Footer id="contacto" />
+				<a href="#inicio" class="scroll-to-top">
+					<img 
+					src="/images/Group 14.svg"/>
+				</a>
 			</main>
 		</div>
 	</div>
 </Layout>
 
+<style>
+	.scroll-to-top {
+	  position: fixed;
+	  bottom: 45px;
+	  right: 20px;
+	  z-index: 1000;
+	  cursor: pointer;
+	}
+  </style>

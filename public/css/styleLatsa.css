@@ -27,7 +27,7 @@ header {
     position: absolute; 
     top: 0;
     left: 0;
-    width: 100%;
+    width: 1911px;
     opacity: 0.9; 
     z-index: -2;
   }
@@ -37,7 +37,7 @@ header {
     position: absolute; 
     top: -120px;
     left: 0;
-    width: 100%;
+    width: 1911px;
     min-width: 500px;
     height: 1250px;
     overflow: hidden;
@@ -46,11 +46,36 @@ header {
     animation: deform 3s infinite alternate;
   }
 
+  .foco-primario-2 {
+    position: absolute;
+    top: 2000px;
+    left: 0;
+    width: 1911px;
+    opacity: 0.4;
+    z-index: -6;
+    animation: deform 10s infinite alternate;
+  }
+  
+
+  .foco-secundario-2 {
+    position: absolute;
+    top: 1871px;
+    left: 0;
+    width: 1911px;
+    min-width: 500px;
+    height: 1250px;
+    opacity: 0.4;
+    z-index: -5;
+    animation: deform 5s infinite alternate;
+  }
+
+  
+
   .lineas-mapa {
     position: absolute; 
     top: 550px;
     left: 0;
-    width: 100%;
+    width: 1911px;
     opacity: 0.9; 
     z-index: -4;
   }
@@ -59,8 +84,28 @@ header {
     position: absolute; 
     top: 1150px;
     left: 0;
-    width: 100%;
+    width: 1911px;
     z-index: -1;
+  }
+
+
+  .lineas-mapa-degradado-2{
+    position: absolute;
+    top: 859px;
+    left: 0;
+    width: 1911px;
+    height: 1367px;
+    z-index: -5;
+    transform: rotateX(180deg);
+  }
+
+  .lineas-mapa-degradado-3{
+    position: absolute;
+    top: 3051px;
+    left: 0;
+    width: 1911px;
+    height: 1367px;
+    z-index: -2;
   }
 
   @keyframes deform {
